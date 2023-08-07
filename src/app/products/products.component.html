@@ -1,1 +1,17 @@
-<p>products works!</p>
+<div class="product-container" *ngFor="let product of products">
+    <div class="product-card">
+        <div class="product-image">
+            <img [src]="product.image" style="width: 220px; height:140px;">
+        </div>
+        <div class="product-name">
+            <h4>{{product.name}}</h4>
+        </div>
+        <div class="product-price">
+            <b>Price: {{product.price}}</b>
+        </div>
+        <div class="product-buttons">
+            <button class="btn btn-buy">Buy now</button>
+            <button class="btn btn-show">Show details</button>
+        </div>
+    </div>
+</div>
